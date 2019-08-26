@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Index Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" , shrink-to-fit=no>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--<div class="row">
+            <div class="col-md-12 header">
+                <h1>Welcome to Feedback Page</h1>
+            </div>
+        </div>-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'portfolio:feedback' %}">Feedback</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link 2" href="{% url 'portfolio:index' %}">About Me</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'portfolio:signup' %}">Signup</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'portfolio:login' %}">Login</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="{% url 'portfolio:login' %}" method="post"> <br></br>
+                    {% csrf_token %}
+                    <h3>Login Here :</h3>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username"
+                            name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="passw">Password:</label>
+                        <input type="password" class="form-control" id="passw" placeholder="Enter password"
+                            name="passw">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <br></br>
+
+    <!-- <div class="row">
+        <div class="font-weight-bold">
+            <h2 style="text-align:center;">&nbsp; LOGIN HERE :</h2>
+        </div>
+    </div>
+    <div> -->
+
+
+
+    <!-- <form action="{% url 'portfolio:login' %}" method="post"> <br></br>
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>-->
+    <!--&nbsp; &nbsp; Username<input name="username" type="text"> <br></br>
+                &nbsp; &nbsp; Password<input name="passw" type="password"> <br></br>
+                <p>&nbsp;&nbsp; {{error}}</p>
+                &nbsp; <input type="submit" value="Login">-->
+
+    </div>
+
+
+</body>
+
+</html>

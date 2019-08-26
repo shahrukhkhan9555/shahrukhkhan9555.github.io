@@ -1,0 +1,22 @@
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  .container {
+    position: relative;
+  }
+  
+  /* Header/Logo Title */
+  .header {
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 10px;
+  }
+  .intro-section {
+    text-align: center;
+    background: yellow;
+    color: white;
+    font-size: 10px;
+  }
